@@ -22,15 +22,13 @@
 <style>
    .container{
     background: url(banner2.png)no-repeat 0px 0px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
     position: relative;
     min-height: 30em;
     max-width:100%;
     
+
 }
 .navbar-brand{
   font-size: 40px;
@@ -40,13 +38,30 @@
   padding:0px;
   text-shadow: 0 1px 2px rgba(12, 41, 21, 0.76);
 }
+
 .a{
   border-radius: 6px;
   display: inline-block;
   border: 2px solid transparent;
   
 }
-
+.collapse{
+  background-color: rgb(134, 136, 150);
+}
+.ban-buttons{
+  position: relative;
+  top: 350px;
+  left:20px;
+  
+  }
+.btn{
+  background-color: rgb(225, 239, 243);
+  padding:10px;
+  
+}
+.btn:hover{
+  background-color:khaki;
+}
 .fa{
     padding:5px;
   }
@@ -58,8 +73,24 @@
   .b{
     text-align: center;
   }
- .c{
+  .footer{
+    background-color: rgb(177, 174, 184);
+  }
+ .footer-title{
+   margin-left: 50px;
+   margin-top: 7px;
+ }
+ .footer-text{
+   margin-top: 10px;
+   margin-left: 5px;
+ }
+ .d{
    
+   list-style: none;
+ }
+ .e{
+   background-color: rgb(101, 134, 143);
+   width:400px;
  }
 </style>
 
@@ -75,11 +106,11 @@
      
        <button class = "navbar-toggler text-light  bg-secondary" type = "button" data-toggle = "collapse" data-target ="#id">
 
-        <span class = "navbar-toggler-icon ">  </span>
+        <span class = "navbar-toggler-icon  ">  </span>
      
        </button>
-                 <div class = "collapse navbar-collapse col-md-5" id = "id">
-                        <ul class="navbar-nav  bg-secondary justify-content-end">
+                 <div class = "collapse navbar-collapse col-md-5 " id = "id">
+                        <ul class="navbar-nav bg-basic justify-content-end">
                            <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
                            <li class="nav-item"><a class="nav-link text-light" href="#">Emergencies</a></li>
                            <li class="nav-item"><a class="nav-link text-light" href="#">Deseases</a></li>
@@ -90,6 +121,10 @@
                     </div> 
                 
                 </nav>
+                <div class="ban-buttons">
+                  <a href="#" class="btn text-dark">Learn More</a>
+                  
+              </div>
     </div>
     <br><br>
 
@@ -104,12 +139,87 @@
     <br>
     <div class = "card bg-primary text-white">
   
-      <div class = "card-body"> <a class="c text-light" href="#">Country Ans Technical Guidance </a></div>
+      <div class = "card-body"> <a class="c text-light" href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN">
+        Install Aarogya Setu App </a></div>
     
     </div>
     <br><br>
    <h2>Coronavirus disease(COVID-19) outbreak</h2>
-   <h2>situation</h2>
+   <div class="e"><h2>Rulebook For Prevention :</h2></div>
+   <div class="row  text-center ">
+     <div class="card col-md-4 ">
+      <h4 class="mt-3">Rule 1<br>
+        <img src="r1.jpg">
+        
+      </h4>
+     </div>
+     <div class="card col-md-4 ">
+      <h4 class="mt-3">Rule 2<br>
+        <img src="r2.jpg">
+        
+      </h4>
+     </div>
+     <div class="card col-md-4 ">
+      <h4 class="mt-3">Rule 3<br>
+        <img src="r3.jpg">
+        </h4>
+     </div>
+     <div class="card col-md-4 ">
+      <h4 class="mt-3">Rule 4<br>
+        <img src="r4.jpg">
+        </h4>
+     </div>
+     <div class="card col-md-4 ">
+      <h4 class="mt-3">Rule 5<br>
+        <img src="r5.jpg">
+        </h4>
+     </div>
+     <div class="card col-md-4 ">
+      <h4 class="mt-3">Rule 6<br>
+        <img src="r6.jpg">
+        </h4>
+        <br>
+     </div>
+     
+    
+  </div>
+</div>
+   
+   <footer>
+    <section class="footer footer_1its py-5 ">
+        <div class="container1 py-md-4">
+            <div class="row footer-top mb-md-5 mb-4">
+                <div class="col-lg-8 col-md-6 footer-grid_section_1its">
+                    <div class="footer-title">
+                        <h3>Speciality</h3>
+                    </div>
+                    <div class="footer-text">
+                        <ul>
+                          <li class="d" ><a href="#">Precaution</a></li>
+                          <li class="d" ><a href="#">Hospitality</a></li>
+                          <li class="d" ><a href="#">Preventions</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-9 mt-md-0 mt-4 footer-grid_section_1its">
+                    <div class="footer-title">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <div class="footer-text">
+                        <ul class=" links">
+                            <li class="d" ><a  href="#">Home </a></li>
+                            <li class="d" ><a href="#">Deseases </a></li>
+                            <li class="d" ><a  href="#">Emergencies</a></li>
+                            <li class="d" ><a  href="#">Contact </a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+            
+    </section>
+</footer>
 
 </body>
 </html>
